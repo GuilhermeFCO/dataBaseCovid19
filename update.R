@@ -1,4 +1,3 @@
-remotes::install_github(repo = "git@github.com:GuilhermeFCO/covidBR.git",
-												dependencies = TRUE)
-
+install.packages("geobr")
+remotes::install_github(repo = "git@github.com:GuilhermeFCO/covidBR.git")
 covidBR::downloadCovidBR()
