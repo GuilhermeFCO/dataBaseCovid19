@@ -1,4 +1,5 @@
 install.packages("crul")
+library("dplyr")
 remotes::install_github(repo = "git@github.com:GuilhermeFCO/covidBR.git")
 covidBR::downloadCovidBR()
 covidBR::createMaps(withCorr = TRUE)
