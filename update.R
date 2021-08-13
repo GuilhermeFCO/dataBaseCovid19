@@ -9,6 +9,6 @@ if (!dir.exists("./graphs"))
   dir.create("./graphs")
 
 cities <- readRDS("./rds/cities.rds")
-cities <- cities %>% dplyr::filter(date >= (min(cities$date) + 120))
+cities <- cities %>% dplyr::select(date, code, accumCases, accumDeaths, newCases, newDeaths)
 saveRDS(cities, "./graphs/cities.rds")
 rm(cities)
